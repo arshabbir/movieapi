@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "bb840bcd-f304-4b21-ac22-3703a58dad5d",
+		"name": "testcollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateByID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"generes\": \"thriller,horror, adventure\",\r\n    \"rating\" : \"5\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/id/tt5817168",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"id",
+						"tt5817168"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateByYear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"generes\": \"good\",\r\n    \"rating\" : \"4\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/year/1991/1997",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"year",
+						"1991",
+						"1997"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"tt7286456\",\r\n    \"targetgeneres\" : \"good\",\r\n    \"targetratings\" : 9.2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Year range",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"yearvector\":{\r\n        \"startyear\" : 1991,\r\n        \"endyear\" : 2010\r\n    },\r\n    \r\n    \"targetgeneres\" : \"comedy,thriller\",\r\n    \"targetratings\" : 8.7\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Exact Year",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"yearvector\":{\r\n        \"startyear\" : 1991\r\n\r\n    },\r\n    \r\n    \"targetgeneres\" : \"horror,thriller\",\r\n    \"targetratings\" : 7.7\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Rating less than given value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"yearvector\":{\r\n        \"startyear\" : 1991\r\n\r\n    },\r\n    \r\n    \"targetgeneres\" : \"horror,thriller\",\r\n    \"targetratings\" : 7.7\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Rating greater than given value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"yearvector\":{\r\n        \"startyear\" : 1991\r\n\r\n    },\r\n    \r\n    \"targetgeneres\" : \"horror,thriller\",\r\n    \"targetratings\" : 7.7\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Rating Equal to given value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"yearvector\":{\r\n        \"startyear\" : 1991\r\n\r\n    },\r\n    \r\n    \"targetgeneres\" : \"horror,thriller\",\r\n    \"targetratings\" : 7.7\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by Genere",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"generesvector\" : {\r\n        \"generes\" : \"comedy\"\r\n    },\r\n    \"targetgeneres\" : \"thriller,crime\",\r\n    \"targetratings\" : 8.1\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
