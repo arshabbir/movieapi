@@ -15,7 +15,7 @@ services:
        DBHOST: 'database'
        APPPORT: 8080
        DBPORT: 3306
-       APIKEY: "1d8aea89"
+       APIKEY: "593dc536"
       links:
        - database
 
