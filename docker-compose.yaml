@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   app:
-      image: testapi
+      image: arshabbir/movieapi:latest
       container_name: movi
       depends_on:
             database:
@@ -17,7 +17,7 @@ services:
        DBPORT: 3306
        APIKEY: "1d8aea89"
       links:
-       - db
+       - database
 
   database:
     image: mysql:5.7
